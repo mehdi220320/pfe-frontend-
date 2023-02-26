@@ -1,0 +1,27 @@
+<div class="login-wrapper">
+  <form action="" class="form">
+    <img src="assets/avatar.png" alt="">
+    <h2>Login</h2>
+    <div class="input-group">
+      <input type="text" name="LoginUser" id="LoginUser" required>
+      <label for="LoginUser">E-mail Address</label>
+    </div>
+    <div class="input-group">
+      <input type="password" name="LoginPassword" id="LoginPassword" required>
+      <label for="LoginPassword">Password</label>
+    </div>
+
+    <input type="submit" value="Login"  class="submit-btn">
+    <br>
+    <a routerLink="/signup"  class="create" >Create New Account</a>
+    <br>
+    <br>
+    <a routerLink="forgetPass" class="forgot-pw">Forget password</a>
+
+  </form>
+</div>
+<div class="container">
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+</div>
